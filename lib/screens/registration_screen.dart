@@ -21,11 +21,12 @@ class RegistrationScreen extends StatelessWidget {
                   'Register',
                   textAlign: TextAlign.center,
                   style: TextStyle(
-                    fontSize: 25,
+                    fontSize: 36,
+                    fontWeight: FontWeight.bold,
                   ),
                 ),
                 Padding(
-                  padding: const EdgeInsets.all(12.0),
+                  padding: const EdgeInsets.all(63.0),
                   child: Column(
                     children: [
                       TextField(
@@ -70,9 +71,9 @@ class RegistrationScreen extends StatelessWidget {
                       RaisedButton(
                         onPressed: () {},
                         shape: new RoundedRectangleBorder(
-                          borderRadius: new BorderRadius.circular(25),
+                          borderRadius: new BorderRadius.circular(8),
                         ),
-                        color: Colors.red[400],
+                        color: Colors.deepOrange[400],
                         child: Container(
                           height: 50,
                           child: Center(
