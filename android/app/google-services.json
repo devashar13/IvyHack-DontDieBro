@@ -1,34 +1,34 @@
 {
   "project_info": {
-    "project_number": "681373118958",
-    "firebase_url": "https://dontdiebro-63097.firebaseio.com",
-    "project_id": "dontdiebro-63097",
-    "storage_bucket": "dontdiebro-63097.appspot.com"
+    "project_number": "915192973455",
+    "firebase_url": "https://dontdiebro-flutter.firebaseio.com",
+    "project_id": "dontdiebro-flutter",
+    "storage_bucket": "dontdiebro-flutter.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:681373118958:android:8806d9566b052233505eff",
+        "mobilesdk_app_id": "1:915192973455:android:09ea1a6ae0c99b24eb08fa",
         "android_client_info": {
           "package_name": "com.example.DontDieBro"
         }
       },
       "oauth_client": [
         {
-          "client_id": "681373118958-deo0ibv64h09fgh5drl460taabbgisnc.apps.googleusercontent.com",
+          "client_id": "915192973455-1c4vjuuhqt9v1qh9qfrppv96m8bkcdk4.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyCVuZ2zxbRggUScez7SFMumLcwwwgkmzhY"
+          "current_key": "AIzaSyDWUkuj5K3oH1n4jGG_XGjxLGF3ibdZZ1E"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "681373118958-deo0ibv64h09fgh5drl460taabbgisnc.apps.googleusercontent.com",
+              "client_id": "915192973455-1c4vjuuhqt9v1qh9qfrppv96m8bkcdk4.apps.googleusercontent.com",
               "client_type": 3
             }
           ]

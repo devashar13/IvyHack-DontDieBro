@@ -20,11 +20,11 @@ Future<void> main() async {
             databaseURL: 'https://flutterfire-cd2f7.firebaseio.com',
           )
         : FirebaseOptions(
-            appId: "1:681373118958:android:8806d9566b052233505eff",
-            apiKey: "AIzaSyCVuZ2zxbRggUScez7SFMumLcwwwgkmzhY",
+            appId: "1:915192973455:android:09ea1a6ae0c99b24eb08fa",
+            apiKey: "AIzaSyDWUkuj5K3oH1n4jGG_XGjxLGF3ibdZZ1E",
             messagingSenderId: '297855924061',
-            projectId: 'flutter-firebase-plugins',
-            databaseURL: 'https://flutterfire-cd2f7.firebaseio.com',
+            projectId: 'dontdiebro-flutter',
+            databaseURL: 'https://dontdiebro-flutter.firebaseio.com',
           ),
   );
 
