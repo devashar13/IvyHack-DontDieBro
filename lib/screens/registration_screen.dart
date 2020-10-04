@@ -5,6 +5,7 @@ import 'package:flutter/material.dart';
 import 'package:DontDieBro/screens/login_screen.dart';
 import 'package:flutter/services.dart';
 import 'package:connectivity/connectivity.dart';
+import 'package:location/location.dart';
 
 class RegistrationScreen extends StatefulWidget {
   static const String id = 'register';
@@ -23,7 +24,7 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
   var emailController = TextEditingController();
 
   var passwordController = TextEditingController();
-
+  Location location = new Location();
   final GlobalKey<ScaffoldState> scaffoldKey = new GlobalKey<ScaffoldState>();
 
   void registerUser() async {
@@ -35,6 +36,7 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
     if (user != null) {
       DatabaseReference userReference =
           FirebaseDatabase.instance.reference().child('user/${user.uid}');
+
       Map userMap = {
         'fullName': fullNameController.text,
         'email': emailController.text,
