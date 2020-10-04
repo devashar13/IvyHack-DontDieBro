@@ -15,7 +15,7 @@ Our app can potentially help save multiple lives and not only detect the acciden
 
 ## Technologies Used
 
-React Native, Google cloud platform, Firebase.
+Flutter, Google cloud platform, Firebase.
 
 ## Unique selling point
 
