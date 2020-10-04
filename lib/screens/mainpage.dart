@@ -7,6 +7,7 @@ import '../DataProvides/models/dataModel.dart';
 import 'package:provider/provider.dart';
 import 'package:animated_text_kit/animated_text_kit.dart';
 import 'package:modal_bottom_sheet/modal_bottom_sheet.dart';
+import '../DataProvides/helper.dart';
 
 class MainPage extends StatefulWidget {
   static const String id = 'mainPage';
@@ -28,6 +29,7 @@ class _MainPageState extends State<MainPage> {
   @override
   void initState() {
     setUpPositionLocator();
+    Helper.getCurrentUserInfo();
     super.initState();
   }
 
