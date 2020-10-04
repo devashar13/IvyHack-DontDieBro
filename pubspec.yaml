@@ -32,6 +32,8 @@ dependencies:
   firebase_auth: ^0.18.1+1
   firebase_database: ^4.1.0
   connectivity: ^0.4.9+3
+  geolocator: ^6.0.0+4
+  location: ^3.0.2
 
 dev_dependencies:
   flutter_test:
