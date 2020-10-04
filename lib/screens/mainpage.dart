@@ -1,4 +1,5 @@
 import 'package:DontDieBro/DataProvides/appData.dart';
+import 'package:DontDieBro/DataProvides/models/user_data.dart';
 import 'package:firebase_database/firebase_database.dart';
 import 'package:flutter/material.dart';
 import 'package:geolocator/geolocator.dart';
@@ -16,14 +17,33 @@ class MainPage extends StatefulWidget {
 }
 
 class _MainPageState extends State<MainPage> {
-  Location location = new Location();
   Future setUpPositionLocator() async {
+    Location location = new Location();
     var pos = await location.getLocation();
     print(pos);
     Address coords = new Address();
     coords.longitude = pos.longitude;
     coords.latitude = pos.latitude;
     Provider.of<AppData>(context, listen: false).updateCoords(coords);
+  }
+
+  FireUser currentFireUser;
+  DatabaseReference helpRef;
+
+  Future createRequest() async {
+    Location location = new Location();
+    var pos = await location.getLocation();
+    helpRef = FirebaseDatabase.instance.reference().child('helpRequest').push();
+    print('my sex name is ${currentFireUser.fullName}');
+    var loc = Provider.of<AppData>(context, listen: false).coords;
+    Map help = {
+      'created_at': DateTime.now().toString(),
+      'name': currentFireUser.fullName,
+      'phone': currentFireUser.phone,
+      'latitude': pos.latitude,
+      'longitude': pos.longitude,
+    };
+    helpRef.set(help);
   }
 
   @override
@@ -47,6 +67,7 @@ class _MainPageState extends State<MainPage> {
               padding: const EdgeInsets.only(top: 150),
               child: GestureDetector(
                 onTap: () {
+                  createRequest();
                   showModalBottomSheet<void>(
                       context: context,
                       builder: (BuildContext context) {

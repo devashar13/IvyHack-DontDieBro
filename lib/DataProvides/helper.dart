@@ -8,12 +8,13 @@ class Helper {
     User currentFirebaseUser = await FirebaseAuth.instance.currentUser;
     String userID = currentFirebaseUser.uid;
     DatabaseReference userRef =
-        FirebaseDatabase.instance.reference().child('users/$userID');
+        FirebaseDatabase.instance.reference().child('user/${userID}');
     userRef.once().then((DataSnapshot snapshot) {
-      FireUser currentUserInfo = FireUser.fromSnapshot(snapshot);
-      print(currentUserInfo.id);
-      print('it work ');
-      print("My name is ${currentUserInfo.fullName}");
+      if (snapshot.value != null) {
+        FireUser currentUserInfo = FireUser.fromSnapshot(snapshot);
+        print('it work ');
+        print("My name is ${currentUserInfo.fullName}");
+      }
     });
   }
 }
