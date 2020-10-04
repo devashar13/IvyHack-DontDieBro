@@ -3,7 +3,7 @@
 
 ## Objective
 
-To provide a faster and more reliable source for accident and natural calamity detection by notifying friends,family and everyone in a radius of 500m about the disaster.
+To provide a faster and more reliable source for accident and natural calamity detection by notifying friends,family and everyone in a radius of 500m about the disaster. We also plan to expand this app to include features to ensure women safety !
 
 ## Implementation
 
