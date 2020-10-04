@@ -2,7 +2,7 @@
 ## Preview
 
 <p align="center">
-  <img width="300" height="500" src="https://media.giphy.com/media/XVjNHkuBOt3lYPbOv2/giphy.gif">
+  <img width="300" height="600" src="https://media.giphy.com/media/XVjNHkuBOt3lYPbOv2/giphy.gif">
 </p>
 
 ## Objective
