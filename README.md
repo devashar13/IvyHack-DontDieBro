@@ -2,6 +2,9 @@
 ## Preview
 
 ![A prototype of our application](https://media.giphy.com/media/XVjNHkuBOt3lYPbOv2/giphy.gif)
+<p align="center">
+  <img width="300" height="800" src="https://media.giphy.com/media/XVjNHkuBOt3lYPbOv2/giphy.gif">
+</p>
 
 ## Objective
 
