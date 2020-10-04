@@ -2,6 +2,8 @@ import 'package:firebase_database/firebase_database.dart';
 import 'package:flutter/material.dart';
 import 'package:geolocator/geolocator.dart';
 import 'package:location/location.dart';
+import 'package:hexcolor/hexcolor.dart';
+
 
 class MainPage extends StatefulWidget {
   static const String id = 'mainPage';
@@ -32,9 +34,9 @@ class _MainPageState extends State<MainPage> {
               },
               child: ClipOval(
                 child: Container(
-                  color: Colors.red[400],
-                  height: 150,
-                  width: 150,
+                  color: Hexcolor("#FF553E"),
+                  height: 250,
+                  width: 250,
                   child: Center(
                     child: Padding(
                       padding: const EdgeInsets.only(right: 5),
@@ -42,7 +44,7 @@ class _MainPageState extends State<MainPage> {
                           style: TextStyle(
                               color: Colors.white,
                               fontWeight: FontWeight.bold,
-                              fontSize: 25)),
+                              fontSize: 55)),
                     ),
                   ),
                 ),
