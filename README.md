@@ -1,4 +1,5 @@
 # DontDieBro
+## Preview
 
 ![A prototype of our application](https://media.giphy.com/media/XVjNHkuBOt3lYPbOv2/giphy.gif)
 
