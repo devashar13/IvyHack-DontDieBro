@@ -3,9 +3,11 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:firebase_database/firebase_database.dart';
 import 'package:flutter/material.dart';
 import 'package:DontDieBro/screens/login_screen.dart';
+import 'package:hexcolor/hexcolor.dart';
 import 'package:flutter/services.dart';
 import 'package:connectivity/connectivity.dart';
 import 'package:location/location.dart';
+
 
 class RegistrationScreen extends StatefulWidget {
   static const String id = 'register';
@@ -77,11 +79,12 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
                   'Register',
                   textAlign: TextAlign.center,
                   style: TextStyle(
-                    fontSize: 25,
+                    fontSize: 36,
+                    fontWeight: FontWeight.bold,
                   ),
                 ),
                 Padding(
-                  padding: const EdgeInsets.all(12.0),
+                  padding: const EdgeInsets.all(63.0),
                   child: Column(
                     children: [
                       TextField(
@@ -155,9 +158,9 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
                           registerUser();
                         },
                         shape: new RoundedRectangleBorder(
-                          borderRadius: new BorderRadius.circular(25),
+                          borderRadius: new BorderRadius.circular(8),
                         ),
-                        color: Colors.red[400],
+                        color: Hexcolor('#FF553E'),
                         child: Container(
                           height: 50,
                           child: Center(
